@@ -5,8 +5,8 @@
       "destination": "https://fundgz.1234567.com.cn/:path*"
     },
     {
-      "source": "/api-sina/:path*",
-      "destination": "https://hq.sinajs.cn/:path*"
+      "source": "/api-sina/(.*)",
+      "destination": "/api/sina?path=$1"
     }
   ],
   "headers": [
