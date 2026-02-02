@@ -1,0 +1,26 @@
+{
+  "rewrites": [
+    {
+      "source": "/api-fund/:path*",
+      "destination": "https://fundgz.1234567.com.cn/:path*"
+    },
+    {
+      "source": "/api-sina/:path*",
+      "destination": "https://hq.sinajs.cn/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api-fund/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
+      "source": "/api-sina/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    }
+  ]
+}
