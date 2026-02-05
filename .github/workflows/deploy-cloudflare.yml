@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "24"
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
@@ -40,7 +40,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: moneyney
+          projectName: fund-manager
           directory: dist
           # 可选：Git 提交信息
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
