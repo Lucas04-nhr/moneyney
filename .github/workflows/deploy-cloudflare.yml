@@ -40,7 +40,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: fund-manager
+          projectName: moneyney
           directory: dist
           # 可选：Git 提交信息
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
